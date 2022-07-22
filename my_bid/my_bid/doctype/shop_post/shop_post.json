@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-06-15 06:38:11.233226",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "shop",
+  "post",
+  "amount",
+  "number_of_the_user",
+  "user",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "shop",
+   "fieldtype": "Link",
+   "label": "shop",
+   "options": "Shop Verification"
+  },
+  {
+   "fieldname": "post",
+   "fieldtype": "Link",
+   "label": "post",
+   "options": "posting"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fetch_from": "post.user",
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "user",
+   "options": "User Login",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Shop Post",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "post.number",
+   "fieldname": "number_of_the_user",
+   "fieldtype": "Data",
+   "label": "Number of the user",
+   "options": "Phone",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-06-15 15:03:30.423590",
+ "modified_by": "Administrator",
+ "module": "My Bid",
+ "name": "Shop Post",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,113 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:user",
+ "creation": "2022-06-01 10:03:00.667272",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "email",
+  "number",
+  "shop_adress",
+  "category1",
+  "category_2",
+  "gst_number",
+  "column_break_10",
+  "user",
+  "verification_done"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Number",
+   "options": "Phone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "shop_adress",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Shop Adress",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gst_number",
+   "fieldtype": "Data",
+   "label": "GST NUMBER",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "user",
+   "options": "User Login",
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "verification_done",
+   "fieldtype": "Check",
+   "label": "Verification Done"
+  },
+  {
+   "fieldname": "category1",
+   "fieldtype": "Link",
+   "label": "Category1",
+   "options": "Categorys",
+   "reqd": 1
+  },
+  {
+   "fieldname": "category_2",
+   "fieldtype": "Link",
+   "label": "Category 2 ",
+   "options": "Categorys"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-06-19 15:16:25.206345",
+ "modified_by": "Administrator",
+ "module": "My Bid",
+ "name": "Shop Verification",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
